@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veil — Find Your People, One Day at a Time</title>
+  <meta name="description"
+    content="Veil is a 3-day anonymous social experiment that matches introverts with 3 strangers. No photos, no names — just pure personality. Download on Google Play." />
+  <meta name="keywords" content="Veil app, introvert app, anonymous social, matching app, Google Play, social experiment, find friends, personality matching" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://veilapp.co/" />
+  <meta property="og:title" content="Veil — Find Your People, One Day at a Time" />
+  <meta property="og:description" content="3 days. 3 strangers. 1 real bond. Where personality speaks before photos." />
+  <meta property="og:image" content="https://veilapp.co/hero-bg.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://veilapp.co/" />
+  <meta property="twitter:title" content="Veil — Find Your People, One Day at a Time" />
+  <meta property="twitter:description" content="3 days. 3 strangers. 1 real bond. Where personality speaks before photos." />
+  <meta property="twitter:image" content="https://veilapp.co/hero-bg.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── SCROLL PROGRESS BAR ───────────────────────────────────────────── -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ── BACK TO TOP BUTTON ─────────────────────────────────────────────── -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ── NAV ──────────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo" id="logo-link">
+        <img src="logoVEIL.png" alt="Veil" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how">How it Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#days">The Journey</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="https://play.google.com/store/apps/details?id=com.ns.findyourintroverfriend" target="_blank" rel="noopener" class="btn btn-primary" id="nav-cta">
+        Get on Google Play
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ───────────────────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#how" class="mob-link">How it Works</a>
+    <a href="#features" class="mob-link">Features</a>
+    <a href="#days" class="mob-link">The Journey</a>
+    <a href="#faq" class="mob-link">FAQ</a>
+    <a href="https://play.google.com/store/apps/details?id=com.ns.findyourintroverfriend" target="_blank" class="btn btn-primary mob-cta">Get on Google Play</a>
+  </div>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+
+    <!-- doodle decorations -->
+    <span class="doodle d-star1">✦</span>
+    <span class="doodle d-star2">✦</span>
+    <span class="doodle d-star3">✶</span>
+    <span class="doodle d-heart">♡</span>
+    <span class="doodle d-plus">+</span>
+    <span class="doodle d-dot dot-tl"></span>
+    <span class="doodle d-dot dot-br"></span>
+
+    <div class="hero-inner">
+      <!-- Left: copy + CTA -->
+      <div class="hero-copy">
+        <div class="hero-pill">
+          <span class="pill-dot"></span> Now on Google Play
+        </div>
+        <h1 class="hero-h1">
+          Connect<br />
+          <em>beyond</em> the<br />
+          surface.
+        </h1>
+        <p class="hero-sub">
+          3 days. 3 strangers. 1 real bond.<br />
+          Where personality speaks before photos.
+        </p>
+        <div class="hero-btns">
+          <a href="https://play.google.com/store/apps/details?id=com.ns.findyourintroverfriend" target="_blank" rel="noopener" class="btn btn-primary btn-lg"
+            id="hero-play-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3.18 23.82L14.07 12 3.18.18A2 2 0 0 0 3 1v22c0 .3.06.57.18.82zM20.54 10.27l-3.05-1.75-3.42 3.48 3.42 3.48 3.07-1.76a2 2 0 0 0 0-3.45zM4.41.12l11.12 11.3L12.41 15 4.41.12zM4.41 23.88L12.41 9l3.12 3.58L4.41 23.88z" />
+            </svg>
+            Download Free
+          </a>
+          <a href="#how" class="btn btn-outline" id="hero-learn-btn">See how it works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat">
+            <strong>3</strong>
+            <span>Day journey</span>
+          </div>
+          <div class="hstat-line"></div>
+          <div class="hstat">
+            <strong>4</strong>
+            <span>Per circle</span>
+          </div>
+          <div class="hstat-line"></div>
+          <div class="hstat">
+            <strong>100%</strong>
+            <span>Anonymous Day 1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: phone mockups -->
+      <div class="hero-phones">
+        <div class="phone-wrap phone-back">
+          <div class="phone-shell">
+            <div class="phone-screen screen-day2">
+              <div class="ps-topbar"><span class="ps-dot v"></span><span class="ps-dot v-2"></span><span
+                  class="ps-name">Day 2 · Depth</span></div>
+              <div class="ps-avatar-row">
+                <div class="ps-avatar a1"></div>
+                <div class="ps-avatar a2"></div>
+              </div>
+              <div class="ps-web-preview"></div>
+              <div class="ps-stat-row">
+                <div class="ps-stat"><strong>12</strong><span>Messages</span></div>
+                <div class="ps-stat"><strong>4</strong><span>In circle</span></div>
+                <div class="ps-stat"><strong>2</strong><span>Active now</span></div>
+              </div>
+              <div class="ps-btn-start">Open Chat ›</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-wrap phone-main">
+          <div class="phone-shell">
+            <div class="phone-screen screen-main">
+              <div class="ps-topbar"><span class="ps-dot t"></span><span class="ps-name">Soul Web</span></div>
+              <canvas id="hero-canvas"></canvas>
+              <div class="ps-card-bottom">
+                <p class="ps-bottom-label">Your circle is live</p>
+                <div class="ps-mini-btn">View Members</div>
+              </div>
+            </div>
+          </div>
+          <!-- floating chip -->
+          <div class="float-chip chip-top">🎭 Anonymous mode</div>
+          <div class="float-chip chip-bot">✨ Day 1 · Discover</div>
+        </div>
+
+        <div class="phone-wrap phone-right">
+          <div class="phone-shell">
+            <div class="phone-screen screen-day3">
+              <div class="ps-topbar"><span class="ps-dot g"></span><span class="ps-name">Bond · Day 3</span></div>
+              <div class="ps-reveal-art">
+                <div class="ps-island-pill">🏝️ Private Island</div>
+                <p class="ps-island-sub">Your strongest bond<br />has been decided.</p>
+              </div>
+              <div class="ps-btn-enter">Enter Ceremony</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ──────────────────────────────────────────────────── -->
+  <section class="section section-grey" id="how">
+    <div class="container">
+      <!-- Welcome Image Showcase -->
+      <div class="welcome-showcase reveal">
+        <img src="welcome_website.png" alt="Welcome to Veil" class="welcome-img" />
+      </div>
+      
+      <div class="sec-header">
+        <span class="sec-tag">How it works</span>
+        <h2>Simple. <span class="underline-accent">Intentional.</span> Powerful.</h2>
+        <p>No swiping. No algorithms rating your looks. A carefully designed 3-day social experiment.</p>
+      </div>
+      <div class="steps-row">
+        <div class="step-card reveal" id="step-1">
+          <div class="step-no">01</div>
+          <div class="step-emoji">🎯</div>
+          <h3>Placed with 3 strangers</h3>
+          <p>Every evening, Veil quietly places you in a small circle. No profiles, no follower counts — just you.</p>
+        </div>
+        <div class="step-arr reveal">→</div>
+        <div class="step-card reveal" id="step-2">
+          <div class="step-no">02</div>
+          <div class="step-emoji">💬</div>
+          <h3>3 days, anonymous</h3>
+          <p>Answer questions, share vibes, play games. Day 1 is fully veiled. Personality is the only currency.</p>
+        </div>
+        <div class="step-arr reveal">→</div>
+        <div class="step-card reveal" id="step-3">
+          <div class="step-no">03</div>
+          <div class="step-emoji">🌅</div>
+          <h3>The veil lifts</h3>
+          <p>Photos reveal on Day 2. Bonds are voted on Day 3. The strongest pair earns a private island.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3 DAYS ────────────────────────────────────────────────────────── -->
+  <section class="section" id="days">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-tag">The Journey</span>
+        <h2>Three days that <span class="underline-accent">change everything.</span></h2>
+      </div>
+      <div class="days-grid">
+        <div class="day-card d1 reveal" id="day-1">
+          <div class="day-no">Day 1</div>
+          <div class="day-icon-big">🎭</div>
+          <h3>Discover</h3>
+          <p>No photos. No real names. Anonymous chat, meaningful questions, and the Soul Web — a live canvas of your
+            connections.</p>
+          <div class="day-tags">
+            <span>Anonymous</span><span>Daily questions</span><span>Soul Web</span>
+          </div>
+        </div>
+        <div class="day-card d2 reveal" id="day-2">
+          <div class="day-no">Day 2</div>
+          <div class="day-icon-big">🔮</div>
+          <h3>Depth</h3>
+          <p>Profile pictures are revealed. Conversations go deeper. You start to feel who these people really are.</p>
+          <div class="day-tags">
+            <span>Photo reveal</span><span>Deeper prompts</span><span>Vibe check</span>
+          </div>
+        </div>
+        <div class="day-card d3 reveal" id="day-3">
+          <div class="day-no">Day 3</div>
+          <div class="day-icon-big">🏝️</div>
+          <h3>Bond</h3>
+          <p>The strongest bond wins a private island. The ceremony reveals everything. Your 72-hour journey completes.
+          </p>
+          <div class="day-tags">
+            <span>The Ceremony</span><span>Private Island</span><span>Real bonds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ──────────────────────────────────────────────────────── -->
+  <section class="section section-grey" id="features">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-tag">Features</span>
+        <h2>Built for <span class="underline-accent">introverts.</span></h2>
+        <p>Every feature reduces anxiety, deepens conversation, and creates comfort.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat-card reveal" id="f1">
+          <div class="feat-ic">🕸️</div>
+          <h3>Soul Web</h3>
+          <p>A live animated canvas showing your group's connections — glowing orbs and sine-wave lines that breathe
+            with life.</p>
+        </div>
+        <div class="feat-card reveal" id="f2">
+          <div class="feat-ic">🎭</div>
+          <h3>Anonymous First</h3>
+          <p>Day 1 strips everything. No photos, no names. Only your thoughts, your humor, and your vibe.</p>
+        </div>
+        <div class="feat-card reveal" id="f3">
+          <div class="feat-ic">❓</div>
+          <h3>Daily Questions</h3>
+          <p>Curated starters designed to spark genuine depth — not small talk.</p>
+        </div>
+        <div class="feat-card reveal" id="f4">
+          <div class="feat-ic">🎮</div>
+          <h3>Icebreaker Games</h3>
+          <p>Would You Rather, True or Myth — games that reveal personality, not party tricks.</p>
+        </div>
+        <div class="feat-card reveal" id="f5">
+          <div class="feat-ic">🌊</div>
+          <h3>Vibe Check</h3>
+          <p>Express how you're feeling through aesthetic moods — no need to find the right words.</p>
+        </div>
+        <div class="feat-card reveal" id="f6">
+          <div class="feat-ic">🏝️</div>
+          <h3>Private Island</h3>
+          <p>The strongest bond earns a private space to continue beyond the 3-day window.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────────────────── -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-tag">Testimonials</span>
+        <h2>Real stories from <span class="underline-accent">real introverts.</span></h2>
+        <p>Thousands have found their people through Veil. Here's what they're saying.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I've never felt so comfortable opening up to strangers. The anonymous first day
+            removed all my anxiety. By Day 3, I felt like I'd known these people forever."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🌸</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Sarah M.</div>
+              <div class="testimonial-role">Introvert · Day 12</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Soul Web visualization is mesmerizing. Watching the connections grow stronger
+            each day made the whole experience feel magical and intentional."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🎨</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Alex K.</div>
+              <div class="testimonial-role">Designer · Day 8</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Finally, an app that gets it. No pressure to be 'on' all the time. The slow
+            reveal felt natural, and the bond I formed was genuine."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">📚</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Marcus T.</div>
+              <div class="testimonial-role">Writer · Day 15</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I was skeptical at first, but the 3-day structure is perfect. Just enough time to
+            connect deeply without feeling overwhelmed. Won my first Private Island!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🎮</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Jamie L.</div>
+              <div class="testimonial-role">Developer · Day 21</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The questions are so thoughtful. They skip the small talk and go straight to what
+            matters. I've had deeper conversations here than anywhere else."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🌙</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Priya R.</div>
+              <div class="testimonial-role">Therapist · Day 6</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As someone with social anxiety, this app is a game-changer. The anonymous start
+            gave me confidence, and the games made breaking the ice so much easier."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🎭</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Chris P.</div>
+              <div class="testimonial-role">Student · Day 4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST INDICATORS ──────────────────────────────────────────────── -->
+  <section class="trust-section">
+    <div class="trust-inner">
+      <div class="trust-item reveal">
+        <div class="trust-icon">👥</div>
+        <div class="trust-number">12,000+</div>
+        <div class="trust-label">Active Users</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">💬</div>
+        <div class="trust-number">50,000+</div>
+        <div class="trust-label">Conversations Started</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">🏝️</div>
+        <div class="trust-number">3,200+</div>
+        <div class="trust-label">Private Islands Created</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">⭐</div>
+        <div class="trust-number">4.8/5</div>
+        <div class="trust-label">Average Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────────────────────────── -->
+  <section class="section" id="faq">
+    <div class="container faq-wrap">
+      <div class="sec-header faq-head">
+        <span class="sec-tag">FAQ</span>
+        <h2>Questions <span class="underline-accent">answered.</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal" id="faq-1">
+          <button class="faq-q">Is Veil free to use?</button>
+          <div class="faq-a">Yes, completely free. Optional credits let you extend chats or send extra vibes.</div>
+        </div>
+        <div class="faq-item reveal" id="faq-2">
+          <button class="faq-q">Who will I be matched with?</button>
+          <div class="faq-a">Veil places you with people of similar energy. The algorithm prioritizes personality
+            compatibility, not looks.</div>
+        </div>
+        <div class="faq-item reveal" id="faq-3">
+          <button class="faq-q">What happens after Day 3?</button>
+          <div class="faq-a">The highest-bonded pair earns a Private Island a dedicated space to continue. Everyone
+            else can start a new journey.</div>
+        </div>
+        <div class="faq-item reveal" id="faq-4">
+          <button class="faq-q">Can I stay anonymous?</button>
+          <div class="faq-a">Day 1 is fully anonymous. Photos only reveal on Day 2. You're always in control.</div>
+        </div>
+        <div class="faq-item reveal" id="faq-5">
+          <button class="faq-q">Is it safe?</button>
+          <div class="faq-a">Every circle has reporting and blocking built in. Any abuse is reviewed within hours.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────────────────── -->
+  <section class="cta-section" id="cta">
+    <span class="doodle d-star1">✦</span>
+    <span class="doodle d-star2">✶</span>
+    <span class="doodle d-heart">♡</span>
+    <div class="cta-inner">
+      <h2>Your circle is waiting.</h2>
+      <p>Join thousands of introverts finding their people — one honest conversation at a time.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.ns.findyourintroverfriend" target="_blank" rel="noopener" class="btn btn-primary btn-lg"
+        id="cta-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M3.18 23.82L14.07 12 3.18.18A2 2 0 0 0 3 1v22c0 .3.06.57.18.82zM20.54 10.27l-3.05-1.75-3.42 3.48 3.42 3.48 3.07-1.76a2 2 0 0 0 0-3.45zM4.41.12l11.12 11.3L12.41 15 4.41.12zM4.41 23.88L12.41 9l3.12 3.58L4.41 23.88z" />
+        </svg>
+        Download on Google Play
+      </a>
+      <p class="cta-note">Free · Android · No sign-up required to browse</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logoVEIL.png" alt="Veil" class="footer-logo-img" />
+          </div>
+          <p class="footer-tag">A 3-day anonymous social experiment designed for introverts. Find your people through
+            personality, not photos.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+            <a href="#" class="social-icon" aria-label="Discord">💬</a>
+            <a href="mailto:hello@veilapp.co" class="social-icon" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Product</div>
+          <a href="#how">How it Works</a>
+          <a href="#features">Features</a>
+          <a href="#days">The Journey</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ns.findyourintroverfriend" target="_blank">Download</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Company</div>
+          <a href="#about">About Us</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:hello@veilapp.co">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Legal</div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Community Guidelines</a>
+          <a href="#">Safety Center</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Veil. Made with care for introverts everywhere.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
